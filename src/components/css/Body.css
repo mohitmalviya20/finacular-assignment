@@ -1,0 +1,101 @@
+.body {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafd;
+  overflow: scroll;
+}
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.graph_container {
+  background-color: #ffffff;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.title > h2 {
+  font-weight: 400;
+  margin-right: 25%;
+}
+.years {
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+}
+.years > .active {
+  background-color: var(--primary);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  color: #ffffff;
+}
+.years > .non-active {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  color: gray;
+}
+.graph_data {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.graph_cards {
+  margin: 0 1rem;
+  width: 30%;
+}
+.horizontal_cards {
+  display: flex;
+}
+.graph_cards2 {
+  margin: 0 1rem;
+  width: 40%;
+  height: 20rem;
+}
+@media screen and (max-width: 768px) {
+  .body {
+    flex: 0.95;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title > h2 {
+    margin: 0;
+    font-size: small;
+  }
+  .years > .active {
+    padding: 0.2rem 0.5rem;
+    font-size: x-small;
+  }
+  .years > .non-active {
+    padding: 0.2rem 0.5rem;
+    font-size: x-small;
+  }
+  .horizontal_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .graph_cards2 {
+    width: 95%;
+  }
+  .graph_cards {
+    margin: 0 1rem;
+    width: 95%;
+  }
+}

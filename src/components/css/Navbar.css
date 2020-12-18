@@ -1,0 +1,18 @@
+.navbar_icon {
+  color: gray;
+  font-size: 2.5rem !important;
+}
+.MuiBadge-colorSecondary {
+  color: #fff;
+  background-color: var(--primary) !important;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ffffff;
+  border-bottom: 1px solid lightgray;
+}
+.navbar > div {
+  padding: 1rem;
+  border-left: 1px solid lightgray;
+}

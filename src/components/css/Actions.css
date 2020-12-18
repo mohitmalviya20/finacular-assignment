@@ -1,0 +1,27 @@
+.actions {
+  flex: 0.15;
+  border-left: 1px solid lightgrey;
+}
+
+.button_container {
+  width: fit-content;
+  margin: 1rem auto;
+}
+.actions_button {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  text-transform: inherit !important;
+  font-size: 1rem !important;
+  padding: 0.5rem 2rem !important;
+  border-radius: 0.5rem !important;
+}
+
+.actions_button > span {
+  font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+  .actions {
+    flex: 0;
+    display: none;
+  }
+}

@@ -1,0 +1,127 @@
+.dataCard {
+  background-color: #ffffff;
+  height: fit-content;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  margin-bottom: 1rem;
+}
+.dataCard_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid lightgray;
+}
+.dataCard_heading1 {
+  color: #3f9af7;
+}
+.dataCard_heading2 {
+  color: var(--primary);
+}
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.data_right {
+  background-color: var(--primary);
+  padding: 1rem;
+  color: white;
+  border-radius: 100%;
+}
+.data_right > .MuiSvgIcon-root {
+  font-size: 3rem;
+}
+.data_left > p {
+  margin: 1rem 0;
+}
+.data_left > div > p {
+  margin: 1rem 0;
+}
+.dataCard_heading4 {
+  margin: 1rem 0;
+  background-color: #e7e8f2;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  color: var(--primary);
+  font-weight: 500;
+}
+.dataCard_heading3 {
+  margin: 1rem 0;
+  border: 1px solid #3f9af7;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  color: #3f9af7;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.data_left > div > p > span {
+  color: gray;
+}
+.data_none {
+  display: none;
+}
+.data_graph {
+  margin: -5rem;
+}
+.icon_active {
+  background-color: #3f9af7;
+  padding: 2rem;
+  color: white;
+  border-radius: 100%;
+}
+@media screen and (max-width: 1440px) {
+  .data_right {
+    background-color: var(--primary);
+    padding: 0.5rem;
+    color: white;
+    border-radius: 100%;
+  }
+  .data_right > .MuiSvgIcon-root {
+    font-size: 2rem;
+  }
+  .dataCard_heading4 {
+    margin: 1rem 0;
+    background-color: #e7e8f2;
+    padding: 0.3rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: larger;
+  }
+  .dataCard_heading3 {
+    margin: 1rem 0;
+    border: 1px solid #3f9af7;
+    font-size: larger;
+
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    color: #3f9af7;
+    font-weight: 500;
+    width: fit-content;
+  }
+  .icon_active {
+    background-color: #3f9af7;
+    padding: 1rem;
+    color: white;
+    border-radius: 100%;
+  }
+  .data_graph {
+    transform: scale(0.5);
+  }
+  .data_left > p {
+    font-size: small;
+  }
+  .data_left > div > p {
+    font-size: small;
+  }
+  .dataCard_heading1 {
+    font-size: small;
+  }
+  .dataCard_heading2 {
+    font-size: small;
+  }
+}

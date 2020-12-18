@@ -1,0 +1,29 @@
+.actionCards {
+  margin: 2rem;
+  background-color: #fafafd;
+  border: 1px solid rgba(211, 211, 211, 0.63);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.actionCards > img {
+  object-fit: contain;
+  height: 8rem;
+}
+.actionCards > p {
+  margin: 2rem 0;
+  color: gray;
+  text-align: center;
+}
+.actionCards_button {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  text-transform: inherit !important;
+  font-size: 1rem !important;
+  padding: 0.5rem 2rem !important;
+  border-radius: 0.5rem !important;
+  font-weight: 800 !important;
+  width: 100% !important;
+}

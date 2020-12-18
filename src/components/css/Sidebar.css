@@ -1,0 +1,90 @@
+.sidebar {
+  border-right: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0.15;
+}
+.logo_data {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo > img {
+  object-fit: contain;
+  height: 5rem;
+  margin: 1rem;
+}
+.logo > h2 {
+  font-weight: 300;
+}
+.nav_links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.nav_links > div {
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+}
+.nav_links > div:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+  transition: 500ms ease-in;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 90%;
+}
+.nav_links > div > h2 {
+  font-weight: 300;
+  padding: 0.5rem;
+  font-size: large;
+}
+.nav_links > div > .MuiSvgIcon-root {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 1rem;
+}
+.avatar > div > h2 {
+  font-weight: 300;
+  margin-left: 1rem;
+}
+.avatar > div {
+  display: flex;
+  align-items: center;
+}
+.circle {
+  background-color: var(--primary);
+  padding: 0.2rem;
+  border-radius: 100%;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    flex: 0.05;
+    align-items: center;
+  }
+  .logo > h2 {
+    display: none;
+  }
+  .logo_data > button {
+    display: none;
+  }
+  .nav_links > div > h2 {
+    display: none;
+  }
+  .avatar > div > h2 {
+    display: none;
+  }
+  .avatar > .MuiSvgIcon-root {
+    display: none;
+  }
+}
